@@ -26,7 +26,9 @@ color:white ;
     
 }
 .navbar-items ul li:hover{
-    border: 1px solid white
+    border: 1px solid white;
+    border-radius: 7px;
+    opacity: 0.6;
 }
 .issue:hover{
     border: 2px solid #f0a84b

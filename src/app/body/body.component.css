@@ -1,0 +1,128 @@
+button{
+    padding-bottom: 357px;
+}
+/* Basic reset for the document */
+body, h1, h2, h3, p, img {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+  }
+  
+  /* Center the cards horizontally */
+  .card-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Style for each card */
+  .card {
+    flex: 1;
+    max-width: 300px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for images inside cards */
+  .card img {
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Add some spacing between elements on smaller screens */
+  /* @media screen and (max-width: 600px) {
+    .card-container {
+      flex-wrap: wrap;
+    }
+  
+    .card {
+      flex: 0 1 100%;
+    }
+  }
+   */
+   /* Basic reset for the document */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style for the main card */
+  .main-card {
+    display: flex;
+    margin-left: 0px;
+    padding: 0px;
+    max-width: 380px;
+    margin: 11px 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .card-group{
+    position: absolute;
+   height: 100px;
+    top: 50%;
+  }
+  /* Style for each sub-card */
+  .sub-card {
+    width: 82%;
+    height: 33vh;
+    margin-right: 0px;
+    margin-left: 8px;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    padding: 33px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .sub-card p{
+    overflow: hidden;
+  }
+
+   .card1{
+     height: fit-content;
+   }
+.card-container{
+    position: relative;
+    bottom: 311px;
+}
+.great{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 600; 
+}
+.card-img-top{
+    height: 80%;
+}
+.shampoo{
+    
+    height: 100%;
+    width: 15vw;
+
+}
+.anchor{
+   
+    list-style: none;
+    color: #007185;
+    text-decoration: none;
+    font-size: 1em;
+
+}
+
+
+@media screen and (max-width:1261px) {
+.card-group{
+    padding-left: 39px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    
+}
+@media screen and (max-width:1261px) {}
