@@ -1,0 +1,97 @@
+.navbar-expand-lg{
+    background-color: #131921;
+}
+.me-auto li a{
+border: 1px solid red;
+color:white ;
+}
+.me-auto li a{
+     margin: 0px 5px;
+}
+.point{
+    color: white;
+    margin: 0px 3px 8px 0px;
+    
+
+
+    
+}
+.point p{
+    margin: 0px 15px 0px 0px;
+}
+.bi{
+    color: white;
+    height: 27px;
+    width: 21px;
+    
+}
+.navbar-items ul li:hover{
+    border: 1px solid white
+}
+.issue:hover{
+    border: 2px solid #f0a84b
+}
+.delivery{
+    font-weight: 600;
+    text-align: center;
+    opacity: 0.7;
+    position: relative;
+    top: 12px;
+}
+.destination{
+    font-weight: 500;
+
+}
+.navbar-items ul{
+    display: flex;
+    flex-direction: row;
+}
+.navbar-items ul li  {
+    color: white;
+    list-style: none;
+    font-size: 1.2rem;
+    margin: 6px 4px 2px 4px;
+}
+.navbar-items ul li button{
+    color: white;
+}
+
+.navbar-items ul{
+    padding: 0px;
+    margin: 0px
+}
+.issue{
+    /* right: 329px; */
+    width: 45vw;
+    display: flex;
+}
+
+
+
+.form-control{
+border-radius: 0px;
+}
+.button{
+     border-radius: 0px;
+     color: white;
+     background-color: #febd69;
+}
+.bi-search{
+    color: black;
+}
+
+@media screen and (max-width:606px) {
+    .issue{
+        /* right: 329px; */
+        width: 100vw;
+    }
+    .navbar-items  {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .navbar-items ul li {
+     margin: 2px 7px 2px 7px;
+    }
+}
