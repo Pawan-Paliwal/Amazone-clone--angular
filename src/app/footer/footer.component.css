@@ -8,6 +8,9 @@
     font-weight: 600;
     height: 60px;
   }
+  ul li a{
+    text-decoration: none;
+  }
   .footer-items {
     display: flex;
     justify-content: space-evenly;
@@ -35,3 +38,63 @@
   .footer{
     margin-top: 123px;
   }
+  .cityname ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    margin-top: 0px;
+
+    margin-right: 101px;
+    margin-left: 219px;
+  }
+  .cityname ul li {
+    margin: 0px 5px;
+    text-decoration: none;
+    list-style: none;
+  }
+  .amazonelog0 img{
+    
+    margin-left: 45vw;
+    margin-top: 13px;
+    margin-bottom: 14px;
+
+  }
+  .cityname{
+    background-color: #232F3E;
+  }
+  .amazonelog0{
+
+    background-color: #232F3E;
+  }
+.citys{
+  display: flex;
+  margin-top: -16px;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #232F3E;
+}
+.citys  li {
+  margin: 0px 5px;
+  text-decoration: none;
+  list-style: none;
+  padding-top: 12px;
+  justify-content: center;
+}
+ul li a{
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+}
+  @media screen and (max-width:685px) {
+  ul{
+    padding-left: 1px;
+    background-color: red;
+  }
+  u li a{
+   font-size: 0.7rem;
+  }
+  .cityname ul{
+    margin: 0px;
+  }
+  }
+  

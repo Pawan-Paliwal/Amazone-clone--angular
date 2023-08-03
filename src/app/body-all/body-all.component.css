@@ -1,0 +1,42 @@
+.card-group .card-title {
+    font-size: 1.1rem;
+    padding-left: 9px;
+    font-weight: 600;
+}
+.card-group .card {
+    margin: 12px 8px 7px 4px;
+}
+.class1{
+    /* background-color: #0F1111; */
+}
+/* .card-group .card1{
+    height: 100vh;
+} */
+.p2{
+    color: #007185;
+    font-size: 1rem;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+.spon{
+    /* background-color: #0F1111; */
+}
+.card-group{
+cursor: pointer;
+}
+.sponsor{
+    border: 1px solid gray;
+    margin-top: 4%;
+    /* margin-bottom: 6%; */
+    width: 79vw;
+    height: 87%;
+    margin-left: 9%;
+    cursor: pointer;
+}
+.contain{
+    margin-top: 5%;
+    cursor: pointer;
+    margin-bottom: 3%;
+}

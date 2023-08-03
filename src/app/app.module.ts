@@ -7,6 +7,8 @@ import { PreheaderComponent } from './preheader/preheader.component';
 import { HeaderComponent } from './header/header.component';
 import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
+import { IframeComponent } from './iframe/iframe.component';
+import { BodyAllComponent } from './body-all/body-all.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { FooterComponent } from './footer/footer.component';
     PreheaderComponent,
     HeaderComponent,
     BodyComponent,
-    FooterComponent
+    FooterComponent,
+    IframeComponent,
+    BodyAllComponent
   ],
   imports: [
     BrowserModule,

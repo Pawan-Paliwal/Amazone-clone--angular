@@ -116,13 +116,9 @@ body, h1, h2, h3, p {
 }
 
 
-@media screen and (max-width:1261px) {
-.card-group{
-    padding-left: 39px;
-    display: flex;
-    flex-wrap: wrap;
-}
 
-    
+@media screen and (max-width:1200px) {
+  .respon{
+    display: none;
+  }
 }
-@media screen and (max-width:1261px) {}
