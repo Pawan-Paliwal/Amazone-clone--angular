@@ -1,0 +1,23 @@
+.col-md-3{
+    display: flex;
+    justify-content: center;
+    background-color: #E3E6E6;
+}
+.col-md-3 img{
+    max-width: 251px;
+    max-height: 245px;
+    cursor: pointer;
+}
+.g-0{
+    border: 2px solid rgb(188, 185, 185);
+    margin: 1rem auto;
+    margin-left: 7px;
+    cursor: pointer;
+}
+.card-text{
+    font-size: 18px!important;
+}
+.caret{
+    color: #007185;
+    cursor: pointer;
+}

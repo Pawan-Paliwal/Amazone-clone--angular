@@ -88,7 +88,6 @@ ul li a{
   @media screen and (max-width:685px) {
   ul{
     padding-left: 1px;
-    background-color: red;
   }
   u li a{
    font-size: 0.7rem;

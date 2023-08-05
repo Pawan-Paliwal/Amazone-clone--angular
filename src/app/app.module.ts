@@ -9,6 +9,11 @@ import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
 import { IframeComponent } from './iframe/iframe.component';
 import { BodyAllComponent } from './body-all/body-all.component';
+import { PhonesComponent } from './phones/phones.component';
+import { AppRouting } from './app-routing';
+import { PhonesListComponent } from './phones/phones-list/phones-list.component';
+import { PhonesDetailComponent } from './phones/phones-detail/phones-detail.component';
+import { PhonesItemComponent } from './phones/phones-list/phones-item/phones-item.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +23,16 @@ import { BodyAllComponent } from './body-all/body-all.component';
     BodyComponent,
     FooterComponent,
     IframeComponent,
-    BodyAllComponent
+    BodyAllComponent,
+    PhonesComponent,
+    PhonesListComponent,
+    PhonesDetailComponent,
+    PhonesItemComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AppRouting
   ],
   providers: [],
   bootstrap: [AppComponent]
