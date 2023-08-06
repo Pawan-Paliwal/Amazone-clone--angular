@@ -2,8 +2,8 @@
 <div class="card-group">
   <div class="card">
     <app-phones-item
-    *ngFor="let PhoneEl of Phone"
-    [Phone]="PhoneEl"
+    *ngFor="let PhoneEl of Phone; let i=index"
+    [Phone]="PhoneEl" [index]="i" routerLink="/detail/{{i}}"
   ></app-phones-item>
   </div>
 </div>

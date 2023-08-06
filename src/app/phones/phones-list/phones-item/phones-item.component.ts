@@ -8,4 +8,5 @@ import { Phone } from 'src/app/shared/phones.model';
 })
 export class PhonesItemComponent {
  @Input() Phone: Phone;
+ @Input() index:number;
 }

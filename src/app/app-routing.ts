@@ -7,7 +7,8 @@ import { PhonesDetailComponent } from './phones/phones-detail/phones-detail.comp
 const router: Routes = [
   {path:'',component:BodyComponent,pathMatch:'full'},
     {path:'phones',component:PhonesComponent},
-    {path:'phones/detail',component:PhonesDetailComponent}
+    {path:'phones/detail',component:PhonesDetailComponent},
+    {path:'phones/:id',component:PhonesDetailComponent}
 ];
 
 @NgModule({

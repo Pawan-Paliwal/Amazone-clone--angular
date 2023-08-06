@@ -2,7 +2,7 @@
   <div class="row g-0">
     <div class="col-lg-4">
       <img
-        src="https://images-eu.ssl-images-amazon.com/images/I/51cVp7TBiHL._AC_UL160_SR160,160_.jpg"
+        src="{{Phone.img}}"
         class="img-fluid rounded-start"
         alt="..."
       />
@@ -10,8 +10,7 @@
     <div class="col-lg-5">
       <div class="card-body">
         <p class="card-title">
-          Nokia All-New 105 Keypad Phone with Built-in UPI Payments,
-          Long-Lasting Battery, Wireless FM Radio | Red
+          {{Phone.name}}
         </p>
         <p>Visit the Nokia Store</p>
         <div class="rating">
@@ -59,7 +58,7 @@
                 <span class="a-size-base a-text-bold">Brand</span>
               </td>
               <td class="a-span9">
-                <span class="a-size-base po-break-word">Nokia</span>
+                <span class="a-size-base po-break-word">{{Phone.Brand}}</span>
               </td>
             </tr>
             <tr class="a-spacing-small po-model_name">
@@ -67,7 +66,7 @@
                 <span class="a-size-base a-text-bold">Model Name</span>
               </td>
               <td class="a-span9">
-                <span class="a-size-base po-break-word">Nokia 105</span>
+                <span class="a-size-base po-break-word">{{Phone.Model}}</span>
               </td>
             </tr>
             <tr class="a-spacing-small po-wireless_provider">
@@ -87,7 +86,7 @@
                 <span class="a-size-base a-text-bold">Operating System</span>
               </td>
               <td class="a-span9">
-                <span class="a-size-base po-break-word">Nokia Series 30+</span>
+                <span class="a-size-base po-break-word">{{Phone.Operating}}</span>
               </td>
             </tr>
             <tr class="a-spacing-small po-cellular_technology">
@@ -95,7 +94,7 @@
                 <span class="a-size-base a-text-bold">Cellular Technology</span>
               </td>
               <td class="a-span9">
-                <span class="a-size-base po-break-word">2G</span>
+                <span class="a-size-base po-break-word">{{Phone.Technology}}</span>
               </td>
             </tr>
           </tbody>
@@ -150,13 +149,13 @@
   <div class="box-detail">
     <p>What is in the box?</p>
     <ul>
-      <li>Phone, Battery, Charger, UG</li>
+      <li>{{Phone.Whats_in_the_box}}</li>
     </ul>
   </div>
   <hr />
   <div class="techincal-detail">
     <div class="check">
-      <p class="nokisa">Nokia All-New 105 Keypad Phone Mobile Phone Information</p>
+      <p class="nokisa">{{Phone.name}} Mobile Phone Information</p>
       <div class="spacing">
         <div class="a-column">
           <div class="row">
@@ -176,21 +175,21 @@
                     OS
                   </th>
                   <td class="a-size-base prodDetAttrValue">
-                    ‎Nokia Series 30+
+                    ‎{{Phone.Operating}}
                   </td>
                 </tr>
                 <tr>
                   <th class="a-color-secondary a-size-base prodDetSectionEntry">
                     RAM
                   </th>
-                  <td class="a-size-base prodDetAttrValue">‎0.03 GB</td>
+                  <td class="a-size-base prodDetAttrValue">‎{{Phone.Ram}}</td>
                 </tr>
                 <tr>
                   <th class="a-color-secondary a-size-base prodDetSectionEntry">
                     Product Dimensions
                   </th>
                   <td class="a-size-base prodDetAttrValue">
-                    ‎11.5 x 4.9 x 1.4 cm; 80 Grams
+                    ‎{{Phone.Item_Dimensions}}
                   </td>
                 </tr>
                 <tr>
@@ -198,7 +197,7 @@
                     Batteries
                   </th>
                   <td class="a-size-base prodDetAttrValue">
-                    ‎1 Lithium Ion batteries required. (included)
+                    ‎{{Phone.Batteries}}
                   </td>
                 </tr>
                 <tr>
@@ -206,20 +205,20 @@
                     Item model number
                   </th>
                   <td class="a-size-base prodDetAttrValue">
-                    ‎NOKIA 105 TA-1575 SS IN CHARCOAL
+                    ‎{{Phone.Model}}
                   </td>
                 </tr>
                 <tr>
                   <th class="a-color-secondary a-size-base prodDetSectionEntry">
                     Connectivity technologies
                   </th>
-                  <td class="a-size-base prodDetAttrValue">‎Bluetooth, USB</td>
+                  <td class="a-size-base prodDetAttrValue">‎{{Phone.Technology}}</td>
                 </tr>
                 <tr>
                   <th class="a-color-secondary a-size-base prodDetSectionEntry">
                     Special features
                   </th>
-                  <td class="a-size-base prodDetAttrValue">‎Radio</td>
+                  <td class="a-size-base prodDetAttrValue">{{Phone.Special_features}}</td>
                 </tr>
                 <tr>
                   <th class="a-color-secondary a-size-base prodDetSectionEntry">
@@ -231,13 +230,13 @@
                   <th class="a-color-secondary a-size-base prodDetSectionEntry">
                     Device interface - primary
                   </th>
-                  <td class="a-size-base prodDetAttrValue">‎Keypad</td>
+                  <td class="a-size-base prodDetAttrValue">{{Phone.Device_interface}}</td>
                 </tr>
                 <tr>
                   <th class="a-color-secondary a-size-base prodDetSectionEntry">
                     Resolution
                   </th>
-                  <td class="a-size-base prodDetAttrValue">‎720p</td>
+                  <td class="a-size-base prodDetAttrValue">{{Phone.Resolution}}</td>
                 </tr>
                 <tr>
                   <th class="a-color-secondary a-size-base prodDetSectionEntry">
@@ -249,33 +248,33 @@
                   <th class="a-color-secondary a-size-base prodDetSectionEntry">
                     Colour
                   </th>
-                  <td class="a-size-base prodDetAttrValue">‎Charcoal</td>
+                  <td class="a-size-base prodDetAttrValue">mulitple</td>
                 </tr>
                 <tr>
                   <th class="a-color-secondary a-size-base prodDetSectionEntry">
                     Battery Power Rating
                   </th>
-                  <td class="a-size-base prodDetAttrValue">‎1000</td>
+                  <td class="a-size-base prodDetAttrValue">{{Phone.Battery_Power_Rating}}</td>
                 </tr>
                 <tr>
                   <th class="a-color-secondary a-size-base prodDetSectionEntry">
                     Whats in the box
                   </th>
                   <td class="a-size-base prodDetAttrValue">
-                    ‎Phone, Battery, Charger, UG
+                    ‎{{Phone.Whats_in_the_box}}
                   </td>
                 </tr>
                 <tr>
                   <th class="a-color-secondary a-size-base prodDetSectionEntry">
                     Manufacturer
                   </th>
-                  <td class="a-size-base prodDetAttrValue">‎Nokia</td>
+                  <td class="a-size-base prodDetAttrValue">{{Phone.Manufacturer}}</td>
                 </tr>
                 <tr>
                   <th class="a-color-secondary a-size-base prodDetSectionEntry">
                     Item Weight
                   </th>
-                  <td class="a-size-base prodDetAttrValue">‎80 g</td>
+                  <td class="a-size-base prodDetAttrValue">‎{{Phone.Item_Weight}}</td>
                 </tr>
               </tbody>
             </table>
@@ -346,12 +345,12 @@
                                 class="a-popover-trigger a-declarative"
                               >
                                 <span class="a-size-base a-color-base">
-                                  3.5
+                                 
                                 </span>
                                 <i
                                   class="a-icon a-icon-star a-star-3-5 cm-cr-review-stars-spacing-big"
                                   ><span class="a-icon-alt"
-                                    >3.5 out of 5 stars</span
+                                    >{{Phone.Customer_Reviews}}</span
                                   ></i
                                 >
                                 <i class="a-icon a-icon-popover"></i
@@ -379,7 +378,7 @@
                         </span>
                       </div>
                       <br />
-                      3.5 out of 5 stars
+                      {{Phone.Customer_Reviews}}
                     </td>
                   </tr>
                   <tr>
@@ -391,7 +390,7 @@
                     <td>
                       <span>
                         <span
-                          >#123 in Electronics (<a
+                          >{{Phone.Sellers_Rank}} (<a
                             href="/gp/bestsellers/electronics/ref=pd_zg_ts_electronics"
                             >See Top 100 in Electronics</a
                           >)</span
@@ -414,7 +413,7 @@
                     >
                       Date First Available
                     </th>
-                    <td class="a-size-base prodDetAttrValue">19 May 2023</td>
+                    <td class="a-size-base prodDetAttrValue">{{Phone.Date_First_Available}}</td>
                   </tr>
                   <tr>
                     <th
@@ -423,9 +422,7 @@
                       Manufacturer
                     </th>
                     <td class="a-size-base prodDetAttrValue">
-                      Nokia, Pioneer Urban Square Complex, No 510 5th Floor,
-                      Tower C, Golf Course Extension Road, Sector 62, Gurgaon,
-                      Haryana, 122102, India
+                     {{Phone.Manufacturer}}
                     </td>
                   </tr>
                   <tr>
@@ -447,7 +444,7 @@
                       Item Dimensions LxWxH
                     </th>
                     <td class="a-size-base prodDetAttrValue">
-                      11.5 x 4.9 x 1.4 Centimeters
+                      {{Phone.Item_Dimensions}}
                     </td>
                   </tr>
                   <tr>
@@ -456,7 +453,7 @@
                     >
                       Net Quantity
                     </th>
-                    <td class="a-size-base prodDetAttrValue">1 Piece</td>
+                    <td class="a-size-base prodDetAttrValue">{{Phone.Net_Quantity}}</td>
                   </tr>
                   <tr>
                     <th
@@ -464,7 +461,7 @@
                     >
                       Generic Name
                     </th>
-                    <td class="a-size-base prodDetAttrValue">Feature Phone</td>
+                    <td class="a-size-base prodDetAttrValue">{{Phone.Generic_Name}}</td>
                   </tr>
                 </tbody>
               </table>
