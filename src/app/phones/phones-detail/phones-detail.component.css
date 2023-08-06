@@ -1,0 +1,143 @@
+.col-lg-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #E3E6E6;
+}
+.col-lg-4 img{
+    width: 100%;
+height: 70%;
+margin-top: 7rem;
+}
+.mb-3{
+    margin-top: 2rem;
+}
+.card-title{
+    font-size: 24px;
+    margin: 0px;
+}
+.card-body p{
+    margin: 0px;
+}
+/* hr{
+    margin: 2px 0px 5px 0px;
+} */
+.rating{
+    color: #007185;
+    display: flex;
+}
+.rating img{
+    height: 1.4rem;
+    margin-left: 1em;
+}
+.allinfo{
+    display: flex;
+    
+}
+.allinfo img{
+    height: 2.3rem;
+    margin-left: 24px;
+}
+.allinfo .warranty{
+    margin-left: 0.7rem;
+    margin-right: 0.4rem;
+}
+.allinfo p{
+    color: #007185;
+}
+.a-normal{
+    margin-top: 2rem;
+}
+.a-normal p{
+    display: flex;
+justify-content: center;
+font-size: 1.1em;
+font-weight: 600;
+}
+.a-normal .po-break-word{
+    margin-left: 3em;
+}
+.a-text-bold{
+    font-weight: 600;
+}
+.about{
+   
+margin-top: 2rem;
+}
+.check{
+    border: 1px solid gray;
+}
+.about p{
+    font-size: 1.1em;
+font-weight: 600;
+}
+.col-lg-3 .card{
+    height: 14rem;
+margin: 18px;
+border-radius: 22px;
+}
+.wishlist {
+    background-color: white;
+    width: 13rem;
+border-radius: 13px;
+}
+.col-lg-3 .card-title{
+    display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.4rem;
+color: #B12704 !important;
+}
+.col-lg-3 .rating svg{
+    margin-top: 5px;
+}
+
+.spacing{
+    display: flex;
+    flex-wrap: wrap;
+}
+.spacing .a-color-secondary{
+    background-color: #F0F2F2;
+}
+.techincal-detail tbody tr{
+    box-sizing: border-box;
+border: 1px solid #a3abab;
+}
+.check{
+    
+    
+}
+.a-color-secondary{
+    font-weight: 600;
+padding-left: 1rem;
+}
+.a-keyvalue{
+    width: 49vw;
+}
+.nokisa{
+    margin: 3px 0 7px 0;
+    color: #C60!important;
+    font-size: 16px!important;
+    font-weight: 700;
+    line-height: 32px;
+}
+h1{
+    margin-bottom: 8px!important;
+    font-size: 18px!important;
+    line-height: 24px!important;
+}
+/* .a-section{
+    margin-left: 4rem;
+} */
+a{
+    text-decoration: none;
+list-style: none;
+color: #007185;
+}
+
+@media  screen and (max-width:630px) {
+
+    .a-keyvalue{
+    width: 100vw;
+}
+}
