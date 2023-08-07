@@ -14,6 +14,10 @@ import { AppRouting } from './app-routing';
 import { PhonesListComponent } from './phones/phones-list/phones-list.component';
 import { PhonesDetailComponent } from './phones/phones-detail/phones-detail.component';
 import { PhonesItemComponent } from './phones/phones-list/phones-item/phones-item.component';
+import { BeautyComponent } from './beauty/beauty.component';
+import { BeautyListComponent } from './beauty/beauty-list/beauty-list.component';
+import { BeautyDetailComponent } from './beauty/beauty-detail/beauty-detail.component';
+import { BeautyItemComponent } from './beauty/beauty-list/beauty-item/beauty-item.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +31,11 @@ import { PhonesItemComponent } from './phones/phones-list/phones-item/phones-ite
     PhonesComponent,
     PhonesListComponent,
     PhonesDetailComponent,
-    PhonesItemComponent
+    PhonesItemComponent,
+    BeautyComponent,
+    BeautyListComponent,
+    BeautyDetailComponent,
+    BeautyItemComponent
   ],
   imports: [
     BrowserModule,

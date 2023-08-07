@@ -1,0 +1,4 @@
+<div class="card-group">
+    <app-beauty-item *ngFor="let BeautyEl of Beauty; let i=index"
+    [Beauty]="BeautyEl" [index]="i" routerLink="/detail/{{i}}"></app-beauty-item>
+  </div>
