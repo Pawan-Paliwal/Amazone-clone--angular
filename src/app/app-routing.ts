@@ -5,6 +5,8 @@ import { BodyComponent } from './body/body.component';
 import { PhonesDetailComponent } from './phones/phones-detail/phones-detail.component';
 import { BeautyComponent } from './beauty/beauty.component';
 import { BeautyDetailComponent } from './beauty/beauty-detail/beauty-detail.component';
+import { ElectronicsComponent } from './electronics/electronics.component';
+import { ElectronicsDetailComponent } from './electronics/electronics-detail/electronics-detail.component';
 
 const router: Routes = [
   {path:'',component:BodyComponent,pathMatch:'full'},
@@ -15,6 +17,11 @@ const router: Routes = [
     {path:'Beauty',component:BeautyComponent},
     {path:'Beauty/detail',component:BeautyDetailComponent},
     {path:'Beauty/:id',component:BeautyDetailComponent},
+
+
+    {path:'electronics',component:ElectronicsComponent},
+    {path:'electronics/detail',component:ElectronicsDetailComponent},
+    {path:'electronics/:id',component:ElectronicsDetailComponent},
 
 ];
 

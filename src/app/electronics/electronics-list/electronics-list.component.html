@@ -1,0 +1,6 @@
+<div class="card-group">
+    <app-electronics-item *ngFor="let electronicsEl of electronics; let i=index"
+    [electronics]="electronicsEl" [index]="i" routerLink="/detail/{{i}}"></app-electronics-item>
+  </div>
+
+

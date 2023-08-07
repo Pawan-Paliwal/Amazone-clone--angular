@@ -18,6 +18,11 @@ import { BeautyComponent } from './beauty/beauty.component';
 import { BeautyListComponent } from './beauty/beauty-list/beauty-list.component';
 import { BeautyDetailComponent } from './beauty/beauty-detail/beauty-detail.component';
 import { BeautyItemComponent } from './beauty/beauty-list/beauty-item/beauty-item.component';
+import { ElectronicsComponent } from './electronics/electronics.component';
+import { ElectronicsDetailComponent } from './electronics/electronics-detail/electronics-detail.component';
+import { ElectronicsListComponent } from './electronics/electronics-list/electronics-list.component';
+import { ElectronicsItemComponent } from './electronics/electronics-list/electronics-item/electronics-item.component';
+
 
 @NgModule({
   declarations: [
@@ -35,7 +40,11 @@ import { BeautyItemComponent } from './beauty/beauty-list/beauty-item/beauty-ite
     BeautyComponent,
     BeautyListComponent,
     BeautyDetailComponent,
-    BeautyItemComponent
+    BeautyItemComponent,
+    ElectronicsComponent,
+    ElectronicsDetailComponent,
+    ElectronicsListComponent,
+    ElectronicsItemComponent
   ],
   imports: [
     BrowserModule,
