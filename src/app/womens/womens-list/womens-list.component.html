@@ -1,0 +1,7 @@
+<div class="card-group">
+    <app-womens-item  *ngFor="let womensEl of womens; let i=index"
+    [womens]="womensEl" [index]="i" routerLink="/detail/{{i}}"></app-womens-item>
+  </div>
+
+
+  

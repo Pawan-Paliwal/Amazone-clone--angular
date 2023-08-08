@@ -22,6 +22,15 @@ import { ElectronicsComponent } from './electronics/electronics.component';
 import { ElectronicsDetailComponent } from './electronics/electronics-detail/electronics-detail.component';
 import { ElectronicsListComponent } from './electronics/electronics-list/electronics-list.component';
 import { ElectronicsItemComponent } from './electronics/electronics-list/electronics-item/electronics-item.component';
+import { MensComponent } from './mens/mens.component';
+import { MensListComponent } from './mens/mens-list/mens-list.component';
+import { MensItemComponent } from './mens/mens-list/mens-item/mens-item.component';
+import { MensDetailComponent } from './mens/mens-detail/mens-detail.component';
+import { WomensComponent } from './womens/womens.component';
+import { WomensItemComponent } from './womens/womens-list/womens-item/womens-item.component';
+import { WomensDetailComponent } from './womens/womens-detail/womens-detail.component';
+import { WomensListComponent } from './womens/womens-list/womens-list.component';
+
 
 
 @NgModule({
@@ -44,7 +53,18 @@ import { ElectronicsItemComponent } from './electronics/electronics-list/electro
     ElectronicsComponent,
     ElectronicsDetailComponent,
     ElectronicsListComponent,
-    ElectronicsItemComponent
+    ElectronicsItemComponent,
+    MensComponent,
+    MensListComponent,
+    MensItemComponent,
+    MensDetailComponent,
+    WomensComponent,
+    WomensListComponent,
+    WomensItemComponent,
+    
+
+
+
   ],
   imports: [
     BrowserModule,

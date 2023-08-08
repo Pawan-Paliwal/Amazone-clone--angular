@@ -7,6 +7,10 @@ import { BeautyComponent } from './beauty/beauty.component';
 import { BeautyDetailComponent } from './beauty/beauty-detail/beauty-detail.component';
 import { ElectronicsComponent } from './electronics/electronics.component';
 import { ElectronicsDetailComponent } from './electronics/electronics-detail/electronics-detail.component';
+import { MensComponent } from './mens/mens.component';
+import { MensDetailComponent } from './mens/mens-detail/mens-detail.component';
+import { WomensComponent } from './womens/womens.component';
+import { WomensDetailComponent } from './womens/womens-detail/womens-detail.component';
 
 const router: Routes = [
   {path:'',component:BodyComponent,pathMatch:'full'},
@@ -23,6 +27,14 @@ const router: Routes = [
     {path:'electronics/detail',component:ElectronicsDetailComponent},
     {path:'electronics/:id',component:ElectronicsDetailComponent},
 
+    {path:'Mens',component:MensComponent},
+    {path:'Mens/detail',component:MensDetailComponent},
+    {path:'Mens/:id',component:MensDetailComponent},
+
+
+    {path:'womens',component:WomensComponent},
+    {path:'womens/detail',component:WomensDetailComponent},
+    {path:'womens/:id',component:WomensDetailComponent},
 ];
 
 @NgModule({

@@ -1,4 +1,4 @@
-export class Mens {
+export class womens {
     public img: string;
     public name: string;
     public Brand: string;
