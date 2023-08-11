@@ -135,7 +135,11 @@ a{
 list-style: none;
 color: #007185;
 }
-
+.price{
+    font-size: 28px;
+    color: #0F1111;
+    font-family: "Amazon Ember",Arial,sans-serif;
+}
 @media  screen and (max-width:630px) {
 
     .a-keyvalue{

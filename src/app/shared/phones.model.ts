@@ -22,6 +22,7 @@ export class Phone {
   public Device_interface :string;
   public Resolution:string;
   public Battery_Power_Rating :string;
+  public price:number;
   constructor(
     img: string,
     name: string,
@@ -45,7 +46,8 @@ export class Phone {
     Generic_Name: string,
     Device_interface :string,
     Resolution:string,
-    Battery_Power_Rating:string
+    Battery_Power_Rating:string,
+    price:number
 
   ) {
     this.img = img;
@@ -71,6 +73,7 @@ export class Phone {
     this.Device_interface=Device_interface;
     this.Resolution=Resolution;
     this.Battery_Power_Rating=Battery_Power_Rating;
+    this.price=price
 
   }
 }

@@ -12,6 +12,11 @@
           <p class="card-title">
             {{Mens.name}}
           </p>
+          <div class="price">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+              <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4v1.06Z"/>
+            </svg> {{Mens.price}}
+          </div>
           <p>Visit the nearest Store</p>
           <div class="rating">
             <p>3.2</p>
@@ -127,7 +132,7 @@
               Delivery to Pawan - Banjarawala Dehradun
             </div>
             <hr />
-            <button class="wishlist">Add to wish-list</button>
+            <button class="wishlist" (click)="AddToCart(Mens)">Add to cart</button>
           </div>
         </div>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Pt_y2iFYV7q8aVbYP_QE8dy0LFb2bLFylQ&usqp=CAU" alt="" />

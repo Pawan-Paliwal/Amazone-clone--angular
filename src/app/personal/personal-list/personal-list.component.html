@@ -1,0 +1,4 @@
+<div class="card-group">
+    <app-personal-item *ngFor="let PersonalEl of Personal; let i=index"
+[Personal]="PersonalEl" [index]="i" routerLink="/detail/{{i}}"></app-personal-item>
+  </div>

@@ -1,0 +1,135 @@
+<ng-container *ngIf="cart.length != 0">
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="card-group">
+        <div class="card">
+          <div class="row g-0" *ngFor="let item of cart; let i = index">
+            <div class="col-md-3">
+              <img src="{{ item.img }}" alt="..." />
+            </div>
+            <div class="col-md-9">
+              <div class="card-body">
+                <p class="card-text">{{ item.name }}</p>
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-currency-rupee"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4v1.06Z"
+                    />
+                  </svg>
+                  {{ item.price }}
+                </p>
+                <img src="assets/star.png" alt="" />
+                <span class="caret">{{ item.rating }}</span>
+                <p>Eligible for FREE Shipping</p>
+                <img
+                  src="https://m.media-amazon.com/images/G/31/marketing/fba/fba-badge_18px._CB485936079_.png"
+                  alt=""
+                  class="full"
+                />
+                <p>
+                  Brand: <span>{{ item.Brand }}</span>
+                </p>
+                <p class="card-text">Generic name :{{ item.Generic_Name }}</p>
+                <p>Manufacturer :{{ item.Manufacturer }}</p>
+                <div class="display">
+                  <p><a (click)="removeItem(item)">delete</a></p>
+                  |
+                  <p><a>save for later</a></p>
+                  |
+                  <p><a>see more like this</a></p>
+                  |
+                  <p><a>Share</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card">
+        <div class="card-body">
+          <div class="first">
+            <img src="assets/t.png" alt="" class="check" />
+            <div class="rate">
+              <div class="item1">Your order is eligible for FREE Delivery.</div>
+              <div class="item2">
+                Select this option at checkout. <span>Details</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3>Subtotal ({{ gettotal }} items):  <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-currency-rupee"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4v1.06Z"
+              />
+            </svg> {{ allproduct }}</h3>
+          </div>
+          <hr />
+          <button class="wishlist">Proceed to buy</button>
+
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  EMI Available
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Your order qualifies for EMI with valid credit cards (not
+                  available on purchase of Gold, Jewelry, Gift cards and Amazon
+                  pay balance top up).
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="cart.length === 0">
+  <div class="container fi">
+    <div class="main">
+      <div class="card32">
+        <h4 class="card-title">Missing Cart items?</h4>
+      </div>
+      <div class="center">
+        <img src="assets/pq.png" alt="" />
+        <h5>Your Cart is empty</h5>
+        <h6>Add item to shop now</h6>
+        <button class="btn btn-primary" routerLink="" >shop now</button>
+      </div>
+    </div>
+  </div>
+</ng-container>
+
+<app-footer></app-footer>

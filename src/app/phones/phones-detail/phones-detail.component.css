@@ -76,6 +76,11 @@ font-weight: 600;
 margin: 18px;
 border-radius: 22px;
 }
+.price{
+    font-size: 28px;
+    color: #0F1111;
+    font-family: "Amazon Ember",Arial,sans-serif;
+}
 .wishlist {
     background-color: white;
     width: 13rem;

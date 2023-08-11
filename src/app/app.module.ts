@@ -30,6 +30,11 @@ import { WomensComponent } from './womens/womens.component';
 import { WomensItemComponent } from './womens/womens-list/womens-item/womens-item.component';
 import { WomensDetailComponent } from './womens/womens-detail/womens-detail.component';
 import { WomensListComponent } from './womens/womens-list/womens-list.component';
+import { PersonalComponent } from './personal/personal.component';
+import { PersonalDetailComponent } from './personal/personal-detail/personal-detail.component';
+import { PersonalListComponent } from './personal/personal-list/personal-list.component';
+import { PersonalItemComponent } from './personal/personal-list/personal-item/personal-item.component';
+import { CartComponent } from './cart/cart.component';
 
 
 
@@ -61,6 +66,11 @@ import { WomensListComponent } from './womens/womens-list/womens-list.component'
     WomensComponent,
     WomensListComponent,
     WomensItemComponent,
+    PersonalComponent,
+    PersonalDetailComponent,
+    PersonalListComponent,
+    PersonalItemComponent,
+    CartComponent,
     
 
 

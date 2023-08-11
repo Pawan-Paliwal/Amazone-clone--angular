@@ -1,24 +1,166 @@
-import { Injectable } from "@angular/core";
-import { Phone } from "../shared/phones.model";
+import { Injectable } from '@angular/core';
+import { Phone } from '../shared/phones.model';
 
-@Injectable({providedIn:"root"})
-export class phonesService{
-private Phone:Phone[]=[
-    new Phone('https://m.media-amazon.com/images/I/61bK6PMOC3L._SX679_.jpg','Apple iPhone 14 (128 GB) - Blue','Apple','iPhone','iOS','5G',12344,'128GB, 256GB, 512GB','5.78 inches (146.7 mm)','Video playback: Up to 20 hours Video playback (streamed): Up to 16 hours Audio playback: Up to 80 hours 20W adapter or higher (sold separately) Fast-charge capable:Up to 50% charge in around 30 minutes with 20W adapter or higher (available separately)','Rated IP68 (maximum depth of 6 meters up to 30 minutes) under IEC standard 60529','iPhone with iOS 16, USB-C to Lightning Cable','Apple, Apple Inc, One Apple Park Way, Cupertino, CA 95014, USA. or Apple India Private Limited No.24, 19th floor, Concorde Tower C, UB City, Vittal Mallya Road, Bangalore - 560 001','#1 in Basic Mobiles','6.07 ounces (172 grams)','4.5 out of 5','19 May 2023','	8 x 71 x 147 Millimeters','1 item','iPhone','touch screen','The iPhone 14 features a 6.1-inch (155 mm) display with Super Retina XDR OLED technology at a resolution of 2532 × 1170 pixels and a pixel density of about 460 PPI with a refresh rate of 60 Hz.','Video playback: Up to 20 hours Video playback (streamed): Up to 16 hours Audio playback: Up to 80 hours 20W adapter or higher (sold separately) Fast-charge capable:Up to 50% charge in around 30 minutes with 20W adapter or higher (available separately)'),
-    new Phone('https://m.media-amazon.com/images/I/51eGaaoQ1mL._SX300_SY300_QL70_FMwebp_.jpg','TECNO Camon 19 Neo (Dreamland Green, 6GB RAM, 128GB Storage)|48MP Super Night Rear Camera|32MP Selfie Camera, 2 GB RAM, Blue, Smartphone','Tecno','Camon 19 Neo','	HiOS 8.6 based on Android 12','4G,3G,2G',2212,'128 GB','16.7 x 7.4 x 0.9 cm; 208 Grams','1 Lithium Polymer batteries required. (included)','Ultra Fast Side Fingerprint Sensor | Smart Features like Accept Calls, Take Pictures, Melodious loud sound with DTS Optimization | Music, Smart, Video, Game Modes, HiOS 8.6 based on Android 12 | Next Android OS Upgrade Assurance','Smartphone,33W Power Adaptor, Type C USB Cable, TPU Cover, SIM Ejector Tool','	G Mobiles','#388,995 in Electronics','208 g','3.7 out of 5 stars','9 August 2022','	16.7 x 7.4 x 0.9 Centimeters','1 Count','Smartphone','HIOS 8.6','	1080 x 2460 pixels (~395 ppi density)','5000'),
-    new Phone('https://m.media-amazon.com/images/I/51PqaHZDiNL._SX679_.jpg','IKALL S1 Smartphone (6GB Ram + 6GB Virtual Ram, 128GB Internal Storage, Triple Camera) (Purple)','IKALL','S1','	Android 13.0','LTE',3511,'6 GB','15 x 12 x 10 cm; 440 Grams','6000 Milliamp Hours','Touchscreen, Fingerprint Scanner, Rear Camera, Front Camera, USB, Expandable_Memory, Dual_Sim, Face Unlock, Camera, Fast Charging','User Manual, SIM Tray Ejector, Adapter, Mobile, Phone Case, USB Cable','	Arigato & Obligado Merchandise Private Limited','	#5,437 in Electronics','440 g','2.0 out of 5 stars','	17 June 2023','	15 x 12 x 10 Centimeters','1.00 count','Smartphone','Touchscreen','720p','‎6000 Milliamp Hours'),
-    new Phone('https://m.media-amazon.com/images/I/41dEcQR7UnL._SX300_SY300_QL70_FMwebp_.jpg','realme narzo N53 (Feather Gold, 6GB+128GB) 33W Segment Fastest Charging | Slimmest Phone in Segment | 90 Hz Smooth Display','realme','realme narzo N53','	Android 13.0','LTE',2111,'	6 GB','16.6 x 7.6 x 0.8 cm; 190 Grams','1 Lithium Polymer batteries required. (included)','fast 33W SUPERVOOC charging, Super High-res 64MP primary AI camera','Quick Guide, Handset, Important Info booklet with Warranty Card, Adapter, USB Cable','OPPO Mobiles India Pvt Ltd','#7 in Electronics','	190 g','4.0 out of 5 stars','	12 April 2023','16.6 x 7.6 x 0.8 Centimeters','	1 Count','Smartphone','	‎Touchscreen, Microphone, Buttons, OCR','Realme C53 ; 6.74" 1080x2400 pixels ; 50MP 1080p ; RAM Unisoc Tiger T612 ; 5000mAh Li-Po.','	‎5000 Milliamp Hours'),
-    new Phone('https://m.media-amazon.com/images/I/51caN1u+I+L._SY300_SX300_.jpg','Nothing Phone (2) 5G (Dark Grey, 12GB RAM, 256GB Storage)','	Nothing','	Nothing Phone (2)','	Android 13, Nothing OS 2.0','5G+5G, 4G LTE, 4G, 3G, 2G',43344,'12 GB','16.2 x 7.64 x 0.86 cm; 201.2 Grams','1 Lithium Ion batteries required. (included)','	☆【Rounded Frame】:- The frame of the Nothing Phone 2 has been slightly rounded, providing a more comfortable grip and a premium aesthetic appeal. This design refinement adds a touch of elegance to the overall look of the device., ☆【Upgraded Dual LED Flash】:- The LED flash on the Nothing Phone 2 has been upgraded to a dual LED configuration','1. Nothing Phone (2) | 2. Nothing Cable (c-c) | 3. Safety information and warranty card | 4. Screen protector (pre-applied) | 5. SIM tray ejector.','	ESSENTIALLY NOTHING PRIVATE LIMITED','#8,808 in Electronics','201 g','2.1 out of 5 stars','15 July 2022','16.2 x 7.6 x 0.9 Centimeters','1 peice','Smart Phone','‎Touchscreen, Microphone, Buttons, OCR','Size, 6.55 inches, 103.6 cm2 (~85.8% screen-to-body ratio) ; Resolution, 1080 x 2400 pixels, 20:9 ratio','	‎4700 Milliamp Hours'),
-    new Phone('https://m.media-amazon.com/images/I/417L8qBZ8IL._SX300_SY300_QL70_FMwebp_.jpg','Lava A3 (White Beige) - Dual Sim Mobile with 1750 mAh Big Battery and 32 GB Expandable Storage','Lava','	A3','	Android 6.0','3G',1233,'4 MB','11.8 x 1.5 x 5 cm; 109 Grams','1 Lithium Ion batteries required. (included)','Dual SIM, FM Radio, Video Player, Music Player','	Handset, Charger, Battery and User Manual','Lava','#2,229 in Electronics ','109 g','4.0 out of 5 stars','24 April 2019','11.8 x 1.5 x 5 Centimeters','	1 Count','Mobile','touchscreen','Lava A3 Specs · 1.77 inch ScreenSmall · 128 x 160 pixelsPoor · 116 ppiPoor.',' 1750 mAh Capacity ')
-   
-];
+@Injectable({ providedIn: 'root' })
+export class phonesService {
+  private Phone: Phone[] = [
+    new Phone(
+      'https://m.media-amazon.com/images/I/61bK6PMOC3L._SX679_.jpg',
+      'Apple iPhone 14 (128 GB) - Blue',
+      'Apple',
+      'iPhone',
+      'iOS',
+      '5G',
+      12344,
+      '128GB, 256GB, 512GB',
+      '5.78 inches (146.7 mm)',
+      'Video playback: Up to 20 hours Video playback (streamed): Up to 16 hours Audio playback: Up to 80 hours 20W adapter or higher (sold separately) Fast-charge capable:Up to 50% charge in around 30 minutes with 20W adapter or higher (available separately)',
+      'Rated IP68 (maximum depth of 6 meters up to 30 minutes) under IEC standard 60529',
+      'iPhone with iOS 16, USB-C to Lightning Cable',
+      'Apple, Apple Inc, One Apple Park Way, Cupertino, CA 95014, USA. or Apple India Private Limited No.24, 19th floor, Concorde Tower C, UB City, Vittal Mallya Road, Bangalore - 560 001',
+      '#1 in Basic Mobiles',
+      '6.07 ounces (172 grams)',
+      '4.5 out of 5',
+      '19 May 2023',
+      '	8 x 71 x 147 Millimeters',
+      '1 item',
+      'iPhone',
+      'touch screen',
+      'The iPhone 14 features a 6.1-inch (155 mm) display with Super Retina XDR OLED technology at a resolution of 2532 × 1170 pixels and a pixel density of about 460 PPI with a refresh rate of 60 Hz.',
+      'Video playback: Up to 20 hours Video playback (streamed): Up to 16 hours Audio playback: Up to 80 hours 20W adapter or higher (sold separately) Fast-charge capable:Up to 50% charge in around 30 minutes with 20W adapter or higher (available separately)',57565
+    ),
+    new Phone(
+      'https://m.media-amazon.com/images/I/51eGaaoQ1mL._SX300_SY300_QL70_FMwebp_.jpg',
+      'TECNO Camon 19 Neo (Dreamland Green, 6GB RAM, 128GB Storage)|48MP Super Night Rear Camera|32MP Selfie Camera, 2 GB RAM, Blue, Smartphone',
+      'Tecno',
+      'Camon 19 Neo',
+      '	HiOS 8.6 based on Android 12',
+      '4G,3G,2G',
+      2212,
+      '128 GB',
+      '16.7 x 7.4 x 0.9 cm; 208 Grams',
+      '1 Lithium Polymer batteries required. (included)',
+      'Ultra Fast Side Fingerprint Sensor | Smart Features like Accept Calls, Take Pictures, Melodious loud sound with DTS Optimization | Music, Smart, Video, Game Modes, HiOS 8.6 based on Android 12 | Next Android OS Upgrade Assurance',
+      'Smartphone,33W Power Adaptor, Type C USB Cable, TPU Cover, SIM Ejector Tool',
+      '	G Mobiles',
+      '#388,995 in Electronics',
+      '208 g',
+      '3.7 out of 5 stars',
+      '9 August 2022',
+      '	16.7 x 7.4 x 0.9 Centimeters',
+      '1 Count',
+      'Smartphone',
+      'HIOS 8.6',
+      '	1080 x 2460 pixels (~395 ppi density)',
+      '5000',8766
+    ),
+    new Phone(
+      'https://m.media-amazon.com/images/I/51PqaHZDiNL._SX679_.jpg',
+      'IKALL S1 Smartphone (6GB Ram + 6GB Virtual Ram, 128GB Internal Storage, Triple Camera) (Purple)',
+      'IKALL',
+      'S1',
+      '	Android 13.0',
+      'LTE',
+      3511,
+      '6 GB',
+      '15 x 12 x 10 cm; 440 Grams',
+      '6000 Milliamp Hours',
+      'Touchscreen, Fingerprint Scanner, Rear Camera, Front Camera, USB, Expandable_Memory, Dual_Sim, Face Unlock, Camera, Fast Charging',
+      'User Manual, SIM Tray Ejector, Adapter, Mobile, Phone Case, USB Cable',
+      '	Arigato & Obligado Merchandise Private Limited',
+      '	#5,437 in Electronics',
+      '440 g',
+      '2.0 out of 5 stars',
+      '	17 June 2023',
+      '	15 x 12 x 10 Centimeters',
+      '1.00 count',
+      'Smartphone',
+      'Touchscreen',
+      '720p',
+      '‎6000 Milliamp Hours',5355
+    ),
+    new Phone(
+      'https://m.media-amazon.com/images/I/41dEcQR7UnL._SX300_SY300_QL70_FMwebp_.jpg',
+      'realme narzo N53 (Feather Gold, 6GB+128GB) 33W Segment Fastest Charging | Slimmest Phone in Segment | 90 Hz Smooth Display',
+      'realme',
+      'realme narzo N53',
+      '	Android 13.0',
+      'LTE',
+      2111,
+      '	6 GB',
+      '16.6 x 7.6 x 0.8 cm; 190 Grams',
+      '1 Lithium Polymer batteries required. (included)',
+      'fast 33W SUPERVOOC charging, Super High-res 64MP primary AI camera',
+      'Quick Guide, Handset, Important Info booklet with Warranty Card, Adapter, USB Cable',
+      'OPPO Mobiles India Pvt Ltd',
+      '#7 in Electronics',
+      '	190 g',
+      '4.0 out of 5 stars',
+      '	12 April 2023',
+      '16.6 x 7.6 x 0.8 Centimeters',
+      '	1 Count',
+      'Smartphone',
+      '	‎Touchscreen, Microphone, Buttons, OCR',
+      'Realme C53 ; 6.74" 1080x2400 pixels ; 50MP 1080p ; RAM Unisoc Tiger T612 ; 5000mAh Li-Po.',
+      '	‎5000 Milliamp Hours',3332
+    ),
+    new Phone(
+      'https://m.media-amazon.com/images/I/51caN1u+I+L._SY300_SX300_.jpg',
+      'Nothing Phone (2) 5G (Dark Grey, 12GB RAM, 256GB Storage)',
+      '	Nothing',
+      '	Nothing Phone (2)',
+      '	Android 13, Nothing OS 2.0',
+      '5G+5G, 4G LTE, 4G, 3G, 2G',
+      43344,
+      '12 GB',
+      '16.2 x 7.64 x 0.86 cm; 201.2 Grams',
+      '1 Lithium Ion batteries required. (included)',
+      '	☆【Rounded Frame】:- The frame of the Nothing Phone 2 has been slightly rounded, providing a more comfortable grip and a premium aesthetic appeal. This design refinement adds a touch of elegance to the overall look of the device., ☆【Upgraded Dual LED Flash】:- The LED flash on the Nothing Phone 2 has been upgraded to a dual LED configuration',
+      '1. Nothing Phone (2) | 2. Nothing Cable (c-c) | 3. Safety information and warranty card | 4. Screen protector (pre-applied) | 5. SIM tray ejector.',
+      '	ESSENTIALLY NOTHING PRIVATE LIMITED',
+      '#8,808 in Electronics',
+      '201 g',
+      '2.1 out of 5 stars',
+      '15 July 2022',
+      '16.2 x 7.6 x 0.9 Centimeters',
+      '1 peice',
+      'Smart Phone',
+      '‎Touchscreen, Microphone, Buttons, OCR',
+      'Size, 6.55 inches, 103.6 cm2 (~85.8% screen-to-body ratio) ; Resolution, 1080 x 2400 pixels, 20:9 ratio',
+      '	‎4700 Milliamp Hours',3554
+    ),
+    new Phone(
+      'https://m.media-amazon.com/images/I/417L8qBZ8IL._SX300_SY300_QL70_FMwebp_.jpg',
+      'Lava A3 (White Beige) - Dual Sim Mobile with 1750 mAh Big Battery and 32 GB Expandable Storage',
+      'Lava',
+      '	A3',
+      '	Android 6.0',
+      '3G',
+      1233,
+      '4 MB',
+      '11.8 x 1.5 x 5 cm; 109 Grams',
+      '1 Lithium Ion batteries required. (included)',
+      'Dual SIM, FM Radio, Video Player, Music Player',
+      '	Handset, Charger, Battery and User Manual',
+      'Lava',
+      '#2,229 in Electronics ',
+      '109 g',
+      '4.0 out of 5 stars',
+      '24 April 2019',
+      '11.8 x 1.5 x 5 Centimeters',
+      '	1 Count',
+      'Mobile',
+      'touchscreen',
+      'Lava A3 Specs · 1.77 inch ScreenSmall · 128 x 160 pixelsPoor · 116 ppiPoor.',
+      ' 1750 mAh Capacity ',5565
+    ),
+  ];
 
-GetAll(){
-   return this.Phone.slice();
-}
+  GetAll() {
+    return this.Phone.slice();
+  }
 
-Getid(index: number){
+  Getid(index: number) {
     return this.Phone[index];
   }
-   
 }

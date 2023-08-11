@@ -11,6 +11,9 @@ import { MensComponent } from './mens/mens.component';
 import { MensDetailComponent } from './mens/mens-detail/mens-detail.component';
 import { WomensComponent } from './womens/womens.component';
 import { WomensDetailComponent } from './womens/womens-detail/womens-detail.component';
+import { PersonalComponent } from './personal/personal.component';
+import { PersonalDetailComponent } from './personal/personal-detail/personal-detail.component';
+import { CartComponent } from './cart/cart.component';
 
 const router: Routes = [
   {path:'',component:BodyComponent,pathMatch:'full'},
@@ -35,6 +38,13 @@ const router: Routes = [
     {path:'womens',component:WomensComponent},
     {path:'womens/detail',component:WomensDetailComponent},
     {path:'womens/:id',component:WomensDetailComponent},
+
+    {path:'personal',component:PersonalComponent},
+    {path:'personal/detail',component:PersonalDetailComponent},
+    {path:'personal/:id',component:PersonalDetailComponent},
+
+    {path:'Beauty/search/:searchTerm', component:BeautyComponent},
+     {path:'cart-page',component:CartComponent}
 ];
 
 @NgModule({

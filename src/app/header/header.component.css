@@ -81,7 +81,17 @@ border-radius: 0px;
 .bi-search{
     color: black;
 }
-
+.helo{
+    height: 2rem;
+margin-top: 0.5rem;
+}
+.span1{
+    position: absolute;
+    right: 1.8rem;
+    color: #f08804;
+    font-size: 1rem;
+    font-weight: bold;
+}
 @media screen and (max-width:606px) {
     .issue{
         /* right: 329px; */

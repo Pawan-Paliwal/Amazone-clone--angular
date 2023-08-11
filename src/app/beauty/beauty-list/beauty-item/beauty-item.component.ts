@@ -9,4 +9,5 @@ import { Beauty } from 'src/app/shared/Beauty.nodel';
 export class BeautyItemComponent {
   @Input() Beauty: Beauty;
   @Input() index:number;
+  
 }

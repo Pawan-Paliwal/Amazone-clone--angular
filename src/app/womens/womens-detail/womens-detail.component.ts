@@ -1,7 +1,8 @@
 import { Component, Input } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute, Params, Route, Router } from '@angular/router';
 import { womens } from 'src/app/shared/womens.model';
 import { womenService } from '../womens-service';
+import { CartServiceService } from 'src/app/Services/cart-service.service';
 
 @Component({
   selector: 'app-womens-detail',
@@ -12,7 +13,7 @@ export class WomensDetailComponent {
   womens: womens;
   @Input() id:number;
 
-  constructor(private activerouter:ActivatedRoute,private womenService:womenService){}
+  constructor(private activerouter:ActivatedRoute,private womenService:womenService,private cartservice:CartServiceService,public router:Router){}
 
 ngOnInit(): void {
   this.activerouter.params
@@ -21,4 +22,8 @@ ngOnInit(): void {
     this.womens=this.womenService.Getid(this.id);
   })
 }
+AddToCart(item:any){
+  this.cartservice.addToCart(item);
+   this.router.navigate(['/cart-page'])
+  }
 }

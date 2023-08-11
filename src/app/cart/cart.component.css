@@ -1,0 +1,108 @@
+.col-md-3{
+    display: flex;
+    justify-content: center;
+    background-color: #E3E6E6;
+}
+.col-md-3 img{
+    max-width: 180px;
+    max-height: 245px;
+    cursor: pointer;
+}
+.g-0{
+    border: 2px solid rgb(188, 185, 185);
+    margin: 1rem auto;
+    margin-left: 7px;
+    cursor: pointer;
+}
+.card-text{
+    font-size: 18px!important;
+    display: inline-block;
+width: 100%;
+white-space: normal;
+font-weight: 700;
+}
+.caret{
+    color: #007185;
+    cursor: pointer;
+}
+p{
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+}
+.display{
+    display: flex;
+}
+.display a{
+    text-decoration: none;
+    color: #007185 ;
+}
+.display p{
+    margin-right: 0.4rem;
+    margin-left: 0.4rem;
+}
+.full{
+    display: flex;
+    margin: top;
+    margin-top: 0.3em;
+}
+
+.card{
+    margin: 7px 1rem 12px 4px;
+}
+.check{
+    height: 1.2rem;
+    margin-top: 0.4rem;
+}
+.first{
+    display: flex;
+}
+.first .rate{
+    margin-left: 0.8rem;
+}
+.rate .item1{
+    color: #067D62;
+    text-align: left;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 500;
+}
+.item2 span{
+    color: #067D62;
+}
+.accordion-header{
+    
+    border: 1px solid;
+
+}
+.wishlist{
+    
+    background: #FFD814;
+    border-color: #FCD200;
+    border-radius: 9px;
+    margin-bottom: 1rem;
+    width: 12rem;
+    font-weight: 500;
+}
+.col-lg-4{
+    position: sticky;
+}
+
+.main{
+    border: 1px solid  rgb(49, 52, 49);
+   margin: 1rem 12vw 2rem 12vw;
+   box-shadow: 3px 3px rgb(160, 153, 153), 1em 0 .8em rgb(197, 197, 194);
+}
+h4{
+    text-align: center;
+}
+.center{
+    text-align: center;
+}
+.main img{
+    height: 9rem;
+max-height: 10rem;
+
+}
+.btn{
+    margin-bottom: 1rem;
+}
