@@ -19,7 +19,8 @@ export class BeautyService {
       '1.0 millilitre',
       'Eye Serum',
       '1,122',
-      1200
+      1200,
+      25
     ),
     new Beauty(
       'https://m.media-amazon.com/images/I/51N8QYUci5L._SY450_.jpg',
@@ -36,7 +37,8 @@ export class BeautyService {
       '1 count',
       'Gloss Me Sb-304',
       '12,333',
-      500
+      500,
+      30
     ),
     new Beauty(
       'https://m.media-amazon.com/images/I/51SufCj2KzL._SX300_SY300_QL70_FMwebp_.jpg',
@@ -53,7 +55,8 @@ export class BeautyService {
       '1 count',
       'SPOUNGE',
       '3,283',
-      499
+      499,
+      35
     ),
     new Beauty(
       'https://m.media-amazon.com/images/I/51wKPntT05L._SL1080_.jpg',
@@ -70,7 +73,8 @@ export class BeautyService {
       '1 count',
       '	Fit Me Shade 128 Compact Powder, 8g - Powder That Protects Skin From Sun, Absorbs Oil, Sweat and Helps You To Stay Fresh For Upto 12hrs',
       '1,888',
-      650
+      650,
+      20
     ),
     new Beauty(
       'https://m.media-amazon.com/images/I/31fp0KCWn-L._SX300_SY300_QL70_FMwebp_.jpg',
@@ -87,7 +91,8 @@ export class BeautyService {
       '1 count',
       'Skin Care',
       ' 4,615 ratings',
-      1500
+      1500,
+      50
     ),
     new Beauty(
       'https://m.media-amazon.com/images/I/41oEQBp72YL._SX569_.jpg',
@@ -104,7 +109,8 @@ export class BeautyService {
       '250.0 millilitre',
       'Skin Care',
       ' 334 ratings',
-      1800
+      1800,
+      40
     ),
     new Beauty(
       'https://m.media-amazon.com/images/I/41B84Gs7jjL._SX300_SY300_QL70_FMwebp_.jpg',
@@ -121,7 +127,8 @@ export class BeautyService {
       '1 count',
       '	GelEyeMaskBlue',
       ' 1,906 ratings',
-      1770
+      1770,
+      35
     ),
     new Beauty(
       'https://m.media-amazon.com/images/I/41Iun3M0eLL._SX300_SY300_QL70_FMwebp_.jpg',
@@ -138,7 +145,7 @@ export class BeautyService {
       '3.5 gram',
       'Soft Matte',
       ' 923 ratings',
-      999
+      999,75
     ),
   ];
 

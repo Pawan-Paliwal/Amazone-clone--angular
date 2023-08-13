@@ -20,7 +20,7 @@ export class electronicsService {
       '12 March 2020',
       '1 Count',
       'Robotbanao Electronic Components Project Kit Or Breadboard, hookup wire, battery, Assorted transistor, Assorted Capacitors, Assorted Resistors & Mis components',
-      12322
+      12322,25
     ),
     new electronics(
       'https://m.media-amazon.com/images/I/41zr73E-+9L._SY300_SX300_.jpg',
@@ -38,7 +38,7 @@ export class electronicsService {
       '6 December 2021',
       '1 Piece',
       'Airdopes 141',
-      13555
+      13555,50
     ),
     new electronics(
       'https://m.media-amazon.com/images/I/71Pe4kWY60L._SX466_.jpg',
@@ -56,7 +56,7 @@ export class electronicsService {
       '17 September 2020',
       '	‎1',
       '	60 Watts Soldering Iron',
-      1566
+      1566,55
     ),
     new electronics(
       'https://m.media-amazon.com/images/I/31uE5cyGgiL._SY300_SX300_QL70_FMwebp_.jpg',
@@ -74,7 +74,7 @@ export class electronicsService {
       '	30 June 2021',
       '1 Count',
       'KEYBOARD & MOUSE',
-      999
+      999,60
     ),
     new electronics(
       'https://m.media-amazon.com/images/I/41cL4VNtGdL._SX300_SY300_QL70_FMwebp_.jpg',
@@ -92,7 +92,7 @@ export class electronicsService {
       '4 February 2021',
       '1 count',
       'Intel Core i9 Gaming PC',
-      37000
+      37000,20
     ),
     new electronics(
       'https://m.media-amazon.com/images/I/81xHjVQPwAL._SX569_.jpg',
@@ -110,7 +110,7 @@ export class electronicsService {
       '7 March 2023',
       '1 Piece',
       'Monitor',
-      34000
+      34000,30
     ),
     new electronics(
       'https://m.media-amazon.com/images/I/41LaV6pzPsL._SX300_SY300_QL70_FMwebp_.jpg',
@@ -128,7 +128,7 @@ export class electronicsService {
       ' 23 July 2023',
       '1 piece',
       'Smart speakers',
-      65700
+      65700,25
     ),
     new electronics(
       'https://m.media-amazon.com/images/I/41lpiu-GMXL._SY445_SX342_QL70_FMwebp_.jpg',
@@ -146,7 +146,7 @@ export class electronicsService {
       'July 2022',
       '1 peice',
       'MacBook Air',
-      33242
+      33242,75
     ),
   ];
 

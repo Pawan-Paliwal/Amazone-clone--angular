@@ -32,17 +32,16 @@
 
     <form class="issue" role="search">
       <select id="cars">
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="vw">VW</option>
-        <option value="audi" selected>Audi</option>
+        <option value="volvo" routerLink="phones"><span>Phones</span></option>
+        <option value="saab" routerLink="Mens">Men's</option>
+        <option value="vw" routerLink="personal">
+          Health household & personal care
+        </option>
+        <option value="vw" routerLink="womens">women's</option>
+        <option value="vw" routerLink="electronics">electronics</option>
+        <option value="audi" selected routerLink="Beauty">Beauty</option>
       </select>
-      <input
-        class="form-control"
-        type="search"
-        placeholder="Search"
-      
-      />
+      <input class="form-control" type="search" placeholder="Search" />
       <button class="btn button" type="submit">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -60,9 +59,17 @@
     </form>
     <div class="navbar-items">
       <ul>
-        <li>
+        <div class="point">
+          <div class="delivery chalo">
+            <p>Hellow, Pawan</p>
+          </div>
+          <div class="destination">
+            <p>Acount and lists</p>
+          </div>
+        </div>
+        <li *ngIf="!IsAunthetication">
           <a
-            ><button type="button" class="btn">
+            ><button type="button" class="btn" routerLink="/auth">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -84,9 +91,16 @@
             </button></a
           >
         </li>
+
         <li>
           <a>
-            <button type="button" class="btn">
+            <button
+              type="button"
+              class="btn"
+              routerLink="/auth"
+              (click)="LogOUT()"
+              *ngIf="IsAunthetication"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -109,8 +123,10 @@
           >
         </li>
         <li>
-          <a routerLink="/cart-page"><img src="assets/cart1.png" alt="" class="helo" />  <span class="span1">{{gettotal}}</span></a>
-        
+          <a routerLink="/cart-page"
+            ><img src="assets/cart1.png" alt="" class="helo" />
+            <span class="span1">{{ gettotal }}</span></a
+          >
         </li>
       </ul>
     </div>

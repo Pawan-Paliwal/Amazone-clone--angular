@@ -27,7 +27,7 @@ export class phonesService {
       'iPhone',
       'touch screen',
       'The iPhone 14 features a 6.1-inch (155 mm) display with Super Retina XDR OLED technology at a resolution of 2532 × 1170 pixels and a pixel density of about 460 PPI with a refresh rate of 60 Hz.',
-      'Video playback: Up to 20 hours Video playback (streamed): Up to 16 hours Audio playback: Up to 80 hours 20W adapter or higher (sold separately) Fast-charge capable:Up to 50% charge in around 30 minutes with 20W adapter or higher (available separately)',57565
+      'Video playback: Up to 20 hours Video playback (streamed): Up to 16 hours Audio playback: Up to 80 hours 20W adapter or higher (sold separately) Fast-charge capable:Up to 50% charge in around 30 minutes with 20W adapter or higher (available separately)',57565,25
     ),
     new Phone(
       'https://m.media-amazon.com/images/I/51eGaaoQ1mL._SX300_SY300_QL70_FMwebp_.jpg',
@@ -52,7 +52,7 @@ export class phonesService {
       'Smartphone',
       'HIOS 8.6',
       '	1080 x 2460 pixels (~395 ppi density)',
-      '5000',8766
+      '5000',8766,35
     ),
     new Phone(
       'https://m.media-amazon.com/images/I/51PqaHZDiNL._SX679_.jpg',
@@ -77,7 +77,7 @@ export class phonesService {
       'Smartphone',
       'Touchscreen',
       '720p',
-      '‎6000 Milliamp Hours',5355
+      '‎6000 Milliamp Hours',5355,45
     ),
     new Phone(
       'https://m.media-amazon.com/images/I/41dEcQR7UnL._SX300_SY300_QL70_FMwebp_.jpg',
@@ -102,7 +102,7 @@ export class phonesService {
       'Smartphone',
       '	‎Touchscreen, Microphone, Buttons, OCR',
       'Realme C53 ; 6.74" 1080x2400 pixels ; 50MP 1080p ; RAM Unisoc Tiger T612 ; 5000mAh Li-Po.',
-      '	‎5000 Milliamp Hours',3332
+      '	‎5000 Milliamp Hours',3332,55
     ),
     new Phone(
       'https://m.media-amazon.com/images/I/51caN1u+I+L._SY300_SX300_.jpg',
@@ -127,7 +127,7 @@ export class phonesService {
       'Smart Phone',
       '‎Touchscreen, Microphone, Buttons, OCR',
       'Size, 6.55 inches, 103.6 cm2 (~85.8% screen-to-body ratio) ; Resolution, 1080 x 2400 pixels, 20:9 ratio',
-      '	‎4700 Milliamp Hours',3554
+      '	‎4700 Milliamp Hours',3554,65
     ),
     new Phone(
       'https://m.media-amazon.com/images/I/417L8qBZ8IL._SX300_SY300_QL70_FMwebp_.jpg',
@@ -152,7 +152,7 @@ export class phonesService {
       'Mobile',
       'touchscreen',
       'Lava A3 Specs · 1.77 inch ScreenSmall · 128 x 160 pixelsPoor · 116 ppiPoor.',
-      ' 1750 mAh Capacity ',5565
+      ' 1750 mAh Capacity ',5565,75
     ),
   ];
 

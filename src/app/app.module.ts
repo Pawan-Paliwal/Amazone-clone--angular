@@ -28,13 +28,16 @@ import { MensItemComponent } from './mens/mens-list/mens-item/mens-item.componen
 import { MensDetailComponent } from './mens/mens-detail/mens-detail.component';
 import { WomensComponent } from './womens/womens.component';
 import { WomensItemComponent } from './womens/womens-list/womens-item/womens-item.component';
-import { WomensDetailComponent } from './womens/womens-detail/womens-detail.component';
 import { WomensListComponent } from './womens/womens-list/womens-list.component';
 import { PersonalComponent } from './personal/personal.component';
 import { PersonalDetailComponent } from './personal/personal-detail/personal-detail.component';
 import { PersonalListComponent } from './personal/personal-list/personal-list.component';
 import { PersonalItemComponent } from './personal/personal-list/personal-item/personal-item.component';
 import { CartComponent } from './cart/cart.component';
+import { AuthComponent } from './auth/auth.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {  HttpClientModule } from '@angular/common/http';
+import { loading } from './shared/Loding_spinner/loading';
 
 
 
@@ -71,6 +74,8 @@ import { CartComponent } from './cart/cart.component';
     PersonalListComponent,
     PersonalItemComponent,
     CartComponent,
+    AuthComponent,
+    loading
     
 
 
@@ -78,8 +83,12 @@ import { CartComponent } from './cart/cart.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
-    AppRouting
+    AppRouting,
+    ReactiveFormsModule,
+    FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

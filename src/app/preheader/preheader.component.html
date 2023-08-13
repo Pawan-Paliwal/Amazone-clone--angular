@@ -1,5 +1,5 @@
 <ul class="col-xs-12 bae" id="jannnn">
-  <li>
+  <li *ngIf="isAuthentication">
     <button
       class="btn"
       type="button"
@@ -153,13 +153,13 @@
       </div>
     </div>
   </li>
-  <li id="liitem" routerLink="phones"><a>Phones</a></li>
-  <li id="liitem" routerLink="Beauty"><a>Beauty </a></li>
-  <li id="liitem" routerLink="electronics"><a>electronics</a></li>
-  <li id="liitem" routerLink="Mens"><a>Men's</a></li>
-  <li id="liitem" routerLink="womens" ><a>Women's</a></li>
-  <li id="liitem" routerLink="personal"><a>Health household & personal care </a></li>
-  <li id="liitem"><a>Coupons</a></li>
+  <li id="liitem" routerLink="phones" *ngIf="isAuthentication"><a>Phones</a></li>
+  <li id="liitem" routerLink="Beauty" *ngIf="isAuthentication"><a>Beauty </a></li>
+  <li id="liitem" routerLink="electronics" *ngIf="isAuthentication"><a>electronics</a></li>
+  <li id="liitem" routerLink="Mens" *ngIf="isAuthentication"><a>Men's</a></li>
+  <li id="liitem" routerLink="womens" *ngIf="isAuthentication"><a>Women's</a></li>
+  <li id="liitem" routerLink="personal" *ngIf="isAuthentication"><a>Health household & personal care </a></li>
+  <li id="liitem" *ngIf="isAuthentication"><a>Coupons</a></li>
   <!-- <li id="liitem"><img src="https://m.media-amazon.com/images/G/31/IN-Events/PD23/GW/SWM_400x39_launches_V2._CB602608776_.jpg" alt="" style="height: 40px;"></li> -->
 </ul>
 <div>

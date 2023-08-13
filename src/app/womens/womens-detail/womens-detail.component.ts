@@ -24,6 +24,5 @@ ngOnInit(): void {
 }
 AddToCart(item:any){
   this.cartservice.addToCart(item);
-   this.router.navigate(['/cart-page'])
   }
 }

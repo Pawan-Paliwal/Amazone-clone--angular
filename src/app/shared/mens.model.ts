@@ -15,6 +15,7 @@ export class Mens {
     public Net_Quantity: string;
     public Generic_Name: string;
     public price:number;
+    public off:number;
     constructor(
       img: string,
       name: string,
@@ -31,7 +32,8 @@ export class Mens {
       Date_First_Available: string,
       Net_Quantity: string,
       Generic_Name: string,
-      price:number
+      price:number,
+      off:number
   
     ) {
       this.img = img;
@@ -49,7 +51,8 @@ export class Mens {
       this.Date_First_Available = Date_First_Available;
       this.Net_Quantity = Net_Quantity;
       this.Generic_Name = Generic_Name;
-      this.price=price
+      this.price=price;
+      this.off=off
   
     }
   }

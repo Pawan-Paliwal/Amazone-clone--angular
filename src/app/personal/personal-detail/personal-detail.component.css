@@ -77,9 +77,11 @@ margin: 18px;
 border-radius: 22px;
 }
 .wishlist {
-    background-color: white;
+    background-color: #FFD814;
     width: 13rem;
-border-radius: 13px;
+    border-radius: 13px;
+    font-weight: 500;
+    border: 1px;
 }
 .col-lg-3 .card-title{
     display: flex;
@@ -128,9 +130,36 @@ h1{
     line-height: 24px!important;
 }
 .price{
+    display: flex;
     font-size: 28px;
     color: #0F1111;
     font-family: "Amazon Ember",Arial,sans-serif;
+}
+.price h3{
+    margin-right: 20px;
+    color: #CC0C39 !important;
+font-weight: 300 !important;
+margin-top: 5px;
+
+}
+.deal{
+    font-size: 12px !important;
+    line-height: 16px !important;
+    color: #fff !important;
+    font-weight: 700 !important;
+    height: 2rem;
+    margin-top: 9px;
+    margin-right: 15px;
+    background-color: #CC0C39 ;
+    border-radius: 8px;
+    border: 1px;
+}
+.beni{
+    display: flex;
+    flex-wrap: wrap;
+}
+.price svg{
+    margin-top: 7px;
 }
 /* .a-section{
     margin-left: 4rem;

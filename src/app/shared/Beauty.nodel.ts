@@ -14,6 +14,7 @@ export class Beauty {
   public Generic_Name: string;
   public rating:any;
   public price:number;
+  public off:number;
   constructor(
     img: string,
     name: string,
@@ -32,7 +33,8 @@ export class Beauty {
     Net_Quantity: string,
     Generic_Name: string,
     rating:any,
-    price:number
+    price:number,
+    off:number
   ) {
     this.img = img;
     this.name = name;
@@ -51,5 +53,7 @@ export class Beauty {
     this.Generic_Name = Generic_Name;
     this.rating=rating;
     this.price=price
+    this.off=off
   }
+
 }
