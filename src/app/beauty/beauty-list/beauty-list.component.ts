@@ -25,8 +25,6 @@ export class BeautyListComponent implements OnInit {
         this.Beauty = this.Beautyservice.GetAll();
       }
     });
-    this.Beauty.forEach((a:any)=>{
-      Object.assign(a,{quantity:1,total:a.price})
-    })
+   
   }
 }

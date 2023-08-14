@@ -25,7 +25,9 @@ export class CartServiceService {
 
   addToCart(item: any) {
     this.cartItemList.push(item);
+   
     this.productlist.next(this.cartItemList);
+  
   }
   getTotalPrice() {
     let grandtotal = 0;
@@ -40,6 +42,8 @@ export class CartServiceService {
     this.cartItemList.map((a: any, index: any) => {
       if (product.id == a.id) {
         this.cartItemList.splice(index, 1);
+        // JSON.parse(localStorage.removeItem('cartItem'));
+        localStorage.removeItem('cartItem');
       }
     });
     this.productlist.next(this.cartItemList);

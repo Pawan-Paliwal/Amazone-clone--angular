@@ -49,6 +49,7 @@ export class BeautyDetailComponent {
 //     });
 //   }
 AddToCart(item:any){
-this.cartservice.addToCart(item)
+this.cartservice.addToCart(item);
+localStorage.setItem('cartItem',JSON.stringify(item));
 }
 }

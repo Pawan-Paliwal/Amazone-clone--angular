@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./beauty.component.css']
 })
 export class BeautyComponent {
-
+//   searchtex:string=""
+//   addOn(searchValue:string){
+// this.searchtex=searchValue
+//   }
 }

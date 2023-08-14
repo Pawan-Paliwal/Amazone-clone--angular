@@ -43,7 +43,7 @@ error:string;
       next: (res) => {
         console.log(res);
         this.isLoading=false;
-        this.router.navigate([""]); 
+        this.router.navigate(["Home"]); 
 
       },
       error: (errorMeassge) => {

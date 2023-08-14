@@ -11,7 +11,7 @@
 }
 .card img{
     max-width: 251px;
-    max-height: 210px;
+    max-height: 180px;
     cursor: pointer;
 }
 .g-0{
@@ -30,6 +30,9 @@
 .card-text{
     color: #007185;
     cursor: pointer;
+}
+.card-body{
+    padding-top: 0px;
 }
 @media screen and (max-width:991px) {
     .card{

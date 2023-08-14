@@ -43,6 +43,8 @@ color:white ;
 }
 .destination{
     font-weight: 500;
+        margin-right: 0px;
+    padding-left: 22px;
 
 }
 .navbar-items ul{

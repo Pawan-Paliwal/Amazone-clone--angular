@@ -17,7 +17,9 @@ import { CartComponent } from './cart/cart.component';
 import { AuthComponent } from './auth/auth.component';
 
 const router: Routes = [
-  {path:'',component:BodyComponent,pathMatch:'full'},
+ 
+  {path:'',redirectTo:'auth',pathMatch:'full'},
+  {path:'Home',component:BodyComponent},
     {path:'phones',component:PhonesComponent},
     {path:'phones/detail',component:PhonesDetailComponent},
     {path:'phones/:id',component:PhonesDetailComponent},

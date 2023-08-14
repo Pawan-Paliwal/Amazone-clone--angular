@@ -1,4 +1,10 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  OnDestroy,
+  OnInit,
+  Output,
+} from '@angular/core';
 import { CartServiceService } from '../Services/cart-service.service';
 import { Authservice } from '../auth/auth-service';
 import { Subscription } from 'rxjs';
@@ -13,6 +19,9 @@ export class HeaderComponent implements OnInit, OnDestroy {
   gettotal: number = 0;
   IsAunthetication = false;
   private authSob: Subscription;
+
+  // enterasearchvalue: string = '';
+  // @Output() searchtextchange = new EventEmitter<string>();
 
   constructor(
     private cartService: CartServiceService,
@@ -33,9 +42,13 @@ export class HeaderComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     this.authSob.unsubscribe();
   }
-  LogOUT(){
-    confirm('Do you Really want to logout! ')
-this.authservice.logOut();
+  // OnSeacrhTextchanges() {
+  //   this.searchtextchange.emit(this.enterasearchvalue);
+  // }
+
+  LogOUT() {
+    confirm('Do you Really want to logout! ');
+    this.authservice.logOut();
   }
   //   serchItem(query:KeyboardEvent){
   // if(query){
